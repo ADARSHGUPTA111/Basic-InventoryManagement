@@ -1,0 +1,41 @@
+<div class="container" style="background-color:skyblue;">
+	<h1>CRUD OPERATIONS</h1>
+	<h2>{{title}}</h2>
+	
+
+	<a href="/products/create-form" class="btn btn-success">Create Product</a>
+	<!-- Yahan se jaayega product.js mein jo routes mein h ...phir wahan match karega ki 
+	 /products/create-form jaane par kya render hona chaahiye .... usmein createform render 
+	   karne k liye bola hai toh that will get dispayed kabhi kabhi redirect karne bhi bola jaata h -->
+	<br><br>
+
+	<table class="table">
+		<tr>
+			<th>ID</th>
+			<th>PRODUCTS</th>
+			<th>PRICES</th>
+			<th>SKU</th>
+			<th>ACTION</th>
+
+		</tr>
+		<!-- for loop in handlebars hbs is written as #each -->
+		{{#each products}}
+			<tr>
+				<td>{{this.id}}</td>
+				<td>{{this.product_name}}</td>
+				<td>{{this.price}}</td>
+				<td>{{this.sku}}</td>
+				<td>
+					<a href="/products/edit-form/{{this.id}}" class = "btn btn-info btn-sm">Edit</a>
+					<a href="/products/delete/{{this.id}}" class = "btn btn-danger btn-">Delete</a>
+
+					<!-- Yahan se jaayega to the given url on pressing the button and there it will come to know ki ab aage kya karna h -->
+
+					<!-- the class which we are giving is nothing but the class names in bootstrap -->
+				</td>
+
+
+			</tr>
+		{{/each}}
+	</table>
+</div>

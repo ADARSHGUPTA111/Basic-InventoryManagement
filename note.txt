@@ -1,0 +1,14 @@
+####This is just the notes about what must be done initially in order to set the project #####
+
+###***** In future we shall give importance n creating projects in this fashion ****#####
+
+
+express --view=hbs nodexp2 v
+We write the above line after installing  the node express generator
+Thus we have now created a readymade template in nodejs use the hbs engine
+npm install - this lets you download all the dependencies of node 
+
+//kahan lekar jaana h wo routes k file batayenge
+//kya lekar jaana h wo bhi routes k file batayenge 
+//render likhne k baad upar likhi hui dono cheeze hoti h
+//but jahan lekar jaayenge wo kaisa dikhega ye views k file batayenge 

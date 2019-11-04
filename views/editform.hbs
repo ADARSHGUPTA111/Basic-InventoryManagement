@@ -1,0 +1,26 @@
+<!-- //this is the form that we have created  -->
+
+<div class="container" style="background-color:skyblue;">
+  <h1>{{title}}</h1>
+  <hr />
+  <div class="row">
+    <div class="col-md-6">
+      <form action="/products/edit/{{product.id}}" method="post">
+          <div class="form-group">
+              <input type="text" name="product_name" class="form-control" placeholder="Product Name" value={{product.product_name}} />
+          </div>
+          <div class="form-group">
+              <input type="text" name="sku" class="form-control" placeholder="SKU" value={{product.sku}}>
+          </div>
+          <div class="form-group">
+              <input type="text" name="price" class="form-control" placeholder="Price" value={{product.price}}>
+          </div>
+          <div class="form-group">
+              <button class="btn btn-info">Save Product</button>
+          </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+	
